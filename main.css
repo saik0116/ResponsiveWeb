@@ -1,0 +1,375 @@
+/**************************************************
+Fonts
+Droid Serif
+Droid Sans
+Droid Sans Mono
+
+Font Scaling
+6.854rem
+4.236rem
+2.618rem
+1.618rem
+1.0rem
+0.618rem
+font-family: 'Lustria', serif;
+font-family: 'Lato', sans-serif;
+
+Colour scheme
+
+**************************************************/
+@import 'https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Droid+Serif';
+@import url('https://fonts.googleapis.com/css?family=Lato|Lustria');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Droid Sans', 'more font stack stuff', sans-serif;
+}
+/*************************** 
+DEFAULTS - MOBILE FIRST 
+***************************/
+h1{
+    font: bold 4.236rem 'Lustria','Droid Serif', 'Times New Roman', serif;
+}
+h2{
+    font: bold 2.618rem 'Lustria','Droid Serif', 'Times New Roman', serif;
+}
+li, p, a{
+    font:  1.618rem 'Lato','Droid Sans', 'Arial', sans-serif;
+}
+pre, code, kbd{
+    font: normal 1.0rem 'Droid Sans Mono', 'Arial', 
+}
+/***************************
+    LAYOUT - MOBILE FIRST
+***************************/
+.wrapper{
+    width: 95%;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
+header{
+    width: 95%;
+    color:#4C2B00;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-image:url(http://www.freewebheaders.com/wordpress/wp-content/gallery/wood/birch-wood-grain-background-header.jpg);
+    padding-left: 10%;
+}
+nav{
+    width:95%;
+    margin: 0 auto;   
+}
+
+p {
+    font-size: 18px;
+    padding-left: 25px;
+}
+h2{
+    padding-left: 8%;
+    padding-bottom: 10px
+
+}
+nav>ul{
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top:20px;
+    
+}
+nav li{
+    width: 95%;
+    list-style:none;
+    display: block;
+}
+
+
+nav a,
+nav a:link,
+nav a:visited{
+    display: block;
+    font: bold 1.618rem 'Droid Sans', 'more font stack stuff', sans-serif;
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    text-decoration: none;
+    color: #3D2100;
+    
+    
+}
+nav a:active,
+nav a:focus,
+nav a:hover{
+    display: block;
+            color: orange;
+        transition: color .5s ease;
+    cursor:grab;
+    
+}
+main{
+    width: 95%;
+}
+.col{
+    float: none;
+    width: 95%;
+    
+}
+
+p {
+    font-size: 22px
+}
+.col img{
+    width: 95%;
+    height: auto;
+    max-width:100%;
+    background-color: azure;
+    margin-left: 25px;
+    margin-right: 10px;
+    
+}
+footer{
+    width: 95%;
+    text-align: left
+    background-color:beige;
+    padding-top: 3px;
+    padding-bottom: 30px;
+    clear: both;  color: brown;
+    
+}
+
+
+.lst li{color: blue;
+    list-style-type: none;
+   
+    text-align: center;
+    
+    
+}
+
+
+@media screen and (min-width:600px){
+    .wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+   
+    
+}
+
+    h2 {
+        font-size: 45px
+    }
+
+    p {
+        font-size: 20px
+    }
+    
+nav{
+    width:90%;
+    margin-top: 10px;
+    text-align: center;
+    
+}
+nav>ul{
+    width: 100%;
+    
+}
+nav li{
+    width: 20%;
+    list-style: none;
+    display: inline;
+    margin-right: 3%;
+
+}
+
+nav a,
+nav a:link,
+nav a:visited{
+        display: inline;
+    font: bold 1.618rem 'Droid Sans', 'more font stack stuff', sans-serif;
+    text-align: center;
+    width: 100%;
+    
+    border-bottom: black solid;
+}
+nav a:active,
+nav a:focus,
+nav a:hover{
+    border-bottom: orange solid;
+    transition: 1s;
+}
+main{
+    width: 90%;
+    margin-left: 30px;
+}
+.col{
+    float: left;
+    width: 50%;
+    padding-right: 10px;
+}
+    
+.col img{
+    width: 60%;
+    height: auto;
+    max-width: 100%;
+    background-color: azure;
+    float: left;
+}
+footer{
+    width: 90%;
+    clear: both;
+}
+    
+}
+@media screen and (min-width: 800px){
+    
+header{
+    width: 100%;
+    
+}
+    h2{
+        padding-top: 10px;
+        font-size: 40px;
+    }
+nav{
+    width:90%;
+    margin-top: 10px;
+    text-align: left;
+    
+}
+nav>ul{
+    width: 100%;
+    
+}
+nav li{
+    width: 20%;
+    list-style: none;
+    display: inline;
+    margin-left: 4%;
+
+    
+}
+nav a,
+nav a:link,
+nav a:visited{
+        display: inline;
+    font: bold 1.618rem 'Droid Sans', 'more font stack stuff', sans-serif;
+    text-align: center;
+    width: 100%;
+}
+nav a:active,
+nav a:focus,
+nav a:hover{
+    
+}
+main{
+    width: 90%;
+}
+.col{
+    width: 50%;
+max-width: 50%;
+}
+.col img{
+    width: 50%;
+    height: auto;
+    max-width: 100%;
+    
+    
+}
+footer{
+    width: 100%;
+    clear: both;
+}
+    
+}
+@media screen and (min-width: 1200px){
+      
+header{
+    width: 100%;
+    
+}
+    p {
+        font-size:23px
+    }
+    
+    h2{
+        font-size: 50px;
+    }
+nav{
+    width:30%;
+    float: left;
+    margin: 0;
+    margin-top: 30px
+    
+}
+nav>ul{
+    width: 100%;
+    
+    
+}
+nav li{
+    width: 100%;
+    list-style: none;
+    display: inline-block;
+    margin-left: -40px;
+
+}
+nav a,
+nav a:link,
+nav a:visited{
+    display: block;
+    font: bold 1.618rem 'Droid Sans', 'more font stack stuff', sans-serif;
+    text-align: center;
+    border-bottom:transparent solid;
+    width: 180px;
+    padding-top: 15px;
+    font-size: 35px;
+    
+}
+nav a:active,
+nav a:focus,
+nav a:hover{
+    border-bottom: orange solid ;
+}
+main{
+    width: 70%;
+    margin: 0;
+    float: left;
+    margin-left: -30px;
+    margin-top: 60px
+    
+}
+    p {
+        padding-left: 0;
+    }
+.col{
+    width: 50%;
+    float: left;
+    margin-left: 0;
+}
+.col img{
+    width: 55%;
+    height: auto;
+    max-width: 100%;
+    background-color: azure;
+    margin: 0;
+    margin-right: 8px;
+}
+footer{
+    width: 100%;
+    
+}
+}
+
+@media screen and (max-width: 430px){
+    h1{
+        font-size: 60px;
+
+    }
+}
